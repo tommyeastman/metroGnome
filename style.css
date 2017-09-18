@@ -12,10 +12,10 @@ div {
   transition: all .07s ease;
 }
 
-.playing {
+.gnomeBig {
   transform: scale(1.3);
 }
 
-.quarterBeats {
+.gnomeBlink {
   opacity: 1;
 }
