@@ -14,7 +14,8 @@ function handleUpdate(){
   BPM.value = this.value;
   document.querySelector("#bpmValue").innerHTML = BPM.value;
   console.log(BPM.value);
-  refreshIntervalId = setInterval(play, 1000);
+  console.log(1000*60/BPM.value)
+  refreshIntervalId = setInterval(play, 1000*60/BPM.value);
   console.log(refreshIntervalId);
 }
 
