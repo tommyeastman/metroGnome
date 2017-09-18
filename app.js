@@ -6,16 +6,20 @@ var gnomeIntervalId = 0;
 var isPressed = 0;
 var playToggle = 0;
 
+//for quarter beats
 function play(){
   sound.play();
+  gnome.classList.add("quarterBeats");
 }
 
+//for 1 beats
 function gnomeBig(){
-    gnome.classList.add("playing");
+  gnome.classList.add("playing");
 }
 
 function removeTransition(e){
   this.classList.remove("playing");
+  this.classList.remove("quarterBeats");
 }
 
 //Play and stop based on spacebar.
